@@ -1,0 +1,46 @@
+.continer{
+  max-width: 50%;
+  margin: 0 auto;
+  align-content: center;
+  height: 90vh;
+}
+.card{
+  display: flex;
+  flex-direction: row;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 2px solid blue;
+}
+.ff{
+  align-content: center;
+  height: 300px;
+  padding: 30px;
+  color: aliceblue;
+  background-color: rgb(40, 11, 88);
+}
+.fe{
+  align-content: center;
+  height: 300px;
+  padding: 30px;
+  background-color: rgb(255, 255, 255);
+}
+.ee{
+  display: none;
+}
+input{
+  margin-bottom: 4px;
+}
+.aa{
+  width: 100%;
+  display: block;
+}
+@media screen and (max-width:900px) {
+  .continer{
+    max-width: 64%;
+  }
+  .fe{
+    width: 250px;
+  }
+  .ff{
+    width: 270px;
+  }
+}

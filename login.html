@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header class="bg-sucess text-bg-danger">
+    <h1>User info</h1>
+  </header>
+  <div class="continer">
+    <div class="card">
+      <div class="red ">
+        <div class="ff text-center">
+          <h1>Hello, Friend!</h1>
+          <p>Enter your personal details and start journey with us</p>
+          <span class="btn bg-danger">Sign up</span>
+        </div>
+      </div>
+      <div class="blue ">
+        <div class="fe text-center">
+          <h1>sign in</h1>
+          <input type="email" class="form-control" placeholder="Email">
+          <input type="password" class="form-control" placeholder="password">
+          <p>Forget Your passwrd?</p>
+          <span class="btn bg-danger">signin</span>
+        </div>
+      </div>
+      <div class="blue2 ee">
+        <div class="fe text-center">
+          <h1>create Account</h1>
+          <form action="">
+            <input type="text" class="form-control" placeholder="Name" >
+          <input type="email" class="form-control" placeholder="Email">
+          <input type="password" class="form-control" placeholder="password">
+          </form>
+          <span class="btn bg-danger">signup</span>
+        </div>
+      </div>
+      <div class="red1 ee ">
+        <div class="ff text-center">
+          <h1>Welcome Back!</h1>
+          <p>To keep connected with us please login with your personal info</p>
+          <span class="btn bg-danger">Sign IN</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var red=document.querySelector(".red");
+    var blue=document.querySelector(".blue")
+    var red1=document.querySelector(".red1");
+    var blue2=document.querySelector(".blue2");
+    red.addEventListener('click',toolist);
+    red1.addEventListener('click',tooli);
+    function toolist(){
+      red.removeAttribute('class','aa')
+      red.classList.add('ee');
+      blue.removeAttribute('class','aa')
+      blue.classList.add('ee');
+      red1.removeAttribute('class','ee');
+      red1.classList.add('aa');
+      blue2.removeAttribute('class','ee')
+      blue2.classList.add('aa');
+    }
+    function tooli(){
+      red1.removeAttribute('class','aa')
+      red1.classList.add('ee');
+      blue2.removeAttribute('class','aa')
+      blue2.classList.add('ee');
+      red.removeAttribute('class','ee');
+      red.classList.add('aa');
+      blue.removeAttribute('class','ee')
+      blue.classList.add('aa');
+    }
+
+  </script>
+</body>
+</html>
